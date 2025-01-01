@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tabler/icons-vue": "^3.26.0",
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.5",
