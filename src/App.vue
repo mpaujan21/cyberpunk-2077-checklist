@@ -13,7 +13,6 @@ import rawVehicles from "./data/lists/vehicles";
 import rawWallWeapons from "./data/lists/wallWeapon";
 import rawIconicCyberware from "./data/lists/iconicCyberware";
 import rawPhantomMainQuest from "./data/lists/phantomMainQuest";
-import rawPhantomMisc from "./data/lists/phantomMisc";
 
 import { onMounted, reactive, ref, watch } from "vue";
 import { IconArrowNarrowUp } from "@tabler/icons-vue";
@@ -34,14 +33,13 @@ const vehicles = reactive(loadSavedData("vehicles", rawVehicles));
 const wallWeapons = reactive(loadSavedData("wallWeapons", rawWallWeapons));
 const iconicCyberware = reactive(loadSavedData("iconicCyberware", rawIconicCyberware));
 const phantomMainQuest = reactive(loadSavedData("phantomMainQuest", rawPhantomMainQuest));
-const phantomMisc = reactive(loadSavedData("phantomMainQuest", rawPhantomMisc));
 
 // Tabs and items
 const tabs = ["Achievements", "Collectibles", "Phantom Liberty"];
 const tabChildren = {
   Achievements: ["Main Quest", "Side Quest", "Weapon and Kills", "Exploration", "Gameplay"],
   Collectibles: ["Vehicles", "Stash Wall Weapons", "Iconic Cyberware"],
-  "Phantom Liberty": ["Main Quest (DLC)", "Miscellaneous (DLC)"],
+  "Phantom Liberty": ["Achievements (DLC)"],
 };
 const itemLists = {
   "Main Quest": mainQuest,
@@ -52,8 +50,7 @@ const itemLists = {
   "Vehicles": vehicles,
   "Stash Wall Weapons": wallWeapons,
   "Iconic Cyberware": iconicCyberware,
-  "Main Quest (DLC)": phantomMainQuest,
-  "Miscellaneous (DLC)": phantomMisc,
+  "Achievements (DLC)": phantomMainQuest,
 };
 
 // Default active tab
@@ -82,7 +79,6 @@ watch(vehicles, () => localStorage.setItem("vehicles", JSON.stringify(vehicles))
 watch(wallWeapons, () => localStorage.setItem("wallWeapons", JSON.stringify(wallWeapons)), { deep: true });
 watch(iconicCyberware, () => localStorage.setItem("iconicCyberware", JSON.stringify(iconicCyberware)), { deep: true });
 watch(phantomMainQuest, () => localStorage.setItem("phantomMainQuest", JSON.stringify(phantomMainQuest)), { deep: true });
-watch(phantomMisc, () => localStorage.setItem("phantomMisc", JSON.stringify(phantomMisc)), { deep: true });
 
 // Back to Top button visibility
 const showBackToTop = ref(false);

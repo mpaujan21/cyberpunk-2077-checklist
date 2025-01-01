@@ -56,10 +56,10 @@ const rawMainQuest = [
         text: "During Nocturne Op55N1, head out onto the balcony with Mysty and talk to Johnny Silverhand",
       },
       {
-        text: 'Select: "Think you and Rogue should go"',
+        text: 'Select: ”Think you and Rogue should go”',
       },
       {
-        text: 'Select: "Take Omega Blockers"',
+        text: 'Select: ”Take Omega Blockers”',
       },
       {
         text: "Inside Mikoshi, cross the bridge as Johnny",
