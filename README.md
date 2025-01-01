@@ -54,7 +54,7 @@
   <img src="public/images/web-screenshot.png" alt="Website Screenshot" title="Website Screenshot">
 </a>
 
-This project is meant to allow you to explore the game on your own pace. Inspired by elden ring checklist. This website is to keep track and complete as much as possible through your playthrough, I hope that this website can help with that.
+This project is meant to allow you to explore the game on your own pace. Inspired by [Elden Ring Checklist](https://gobluebro.github.io/Elden-Ring-Checklist/). Whether you're a completionist or just want to stay organized, I hope this tool makes your journey through the game even more enjoyable and rewarding.
 
 ### Built With
 
