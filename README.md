@@ -1,6 +1,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/mpaujan21)
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
